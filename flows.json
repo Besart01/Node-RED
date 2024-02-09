@@ -1,0 +1,3680 @@
+[
+    {
+        "id": "929450001e86a571",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "20308fc0b17a15ef",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "2cc3de6f703c3c3f",
+        "type": "tab",
+        "label": "Flow 2",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "87c3aa459a8beaec",
+        "type": "tab",
+        "label": "Flow 3",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "966f942cddfa9911",
+        "type": "tab",
+        "label": "Chirpstack Configuration UDP Packet forwarder",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "ba26242dd546fca8",
+        "type": "tab",
+        "label": "Flow 4",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "4c977c1dd5011fe1",
+        "type": "tab",
+        "label": "Flow 5",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "ed191f776baaaf49",
+        "type": "tab",
+        "label": "Flow 6",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "5925d8d1aa23e59b",
+        "type": "tab",
+        "label": "Flow 7",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "39079b05cea09165",
+        "type": "tab",
+        "label": "Flow 8",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "9f115ec5c19b92d2",
+        "type": "tab",
+        "label": "SUDO Commands",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "6f0e8262.f095f",
+        "type": "tab",
+        "label": "Device Scanner",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "930610b97ccf9122",
+        "type": "tab",
+        "label": "Device Scanner",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "fd061ce0802c10da",
+        "type": "tab",
+        "label": "Flow 11",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "6f5103d5c454ca96",
+        "type": "subflow",
+        "name": "Input Events",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 60,
+                "y": 100,
+                "wires": [
+                    {
+                        "id": "d3f5590cf8ce800a"
+                    }
+                ]
+            }
+        ],
+        "out": [],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "50a8ee8d5e0b88bf",
+        "type": "subflow",
+        "name": "Gobal Functions",
+        "info": "",
+        "category": "",
+        "in": [],
+        "out": [],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "329aeab1d042e71f",
+        "type": "subflow",
+        "name": "Subflow 1",
+        "info": "",
+        "in": [],
+        "out": [
+            {
+                "x": 860,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "0da642b7d17590f7",
+                        "port": 0
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "061c70e624668413",
+        "type": "group",
+        "z": "ed191f776baaaf49",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "d46073c90c3a1b2a",
+            "c42c84ae158718ea",
+            "0966b7d4343aa3ba",
+            "037cac71da8749a0",
+            "db7f941b3e67e1ec",
+            "90f10c094a01536d",
+            "1603ef5d6ec06cb4",
+            "552678d8c9583302"
+        ],
+        "x": 54,
+        "y": 84
+    },
+    {
+        "id": "86694ccb67cfbdfe",
+        "type": "group",
+        "z": "fd061ce0802c10da",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "d88603ac6ae66e9c",
+            "58d242be76eb5b22",
+            "e55a2e4bba4b2c33",
+            "e74b05af21713cea",
+            "c5e38170e19a9e4d",
+            "3649a464d9bdc35a"
+        ],
+        "x": 4,
+        "y": 31.5,
+        "w": 852,
+        "h": 157
+    },
+    {
+        "id": "3c1d34a1a5c5abcc",
+        "type": "serial-port",
+        "serialport": "/dev/ttyS21",
+        "serialbaud": "57600",
+        "databits": "8",
+        "parity": "none",
+        "stopbits": "1",
+        "waitfor": "",
+        "dtr": "none",
+        "rts": "none",
+        "cts": "none",
+        "dsr": "none",
+        "newline": "\\n",
+        "bin": "false",
+        "out": "char",
+        "addchar": "",
+        "responsetimeout": "10000"
+    },
+    {
+        "id": "1e3a05170433518d",
+        "type": "serial-port",
+        "serialport": "evtest /dev/input/event2",
+        "serialbaud": "115200",
+        "databits": "8",
+        "parity": "none",
+        "stopbits": "1",
+        "waitfor": "",
+        "dtr": "none",
+        "rts": "none",
+        "cts": "none",
+        "dsr": "none",
+        "newline": "\\n",
+        "bin": "false",
+        "out": "char",
+        "addchar": "",
+        "responsetimeout": "10000"
+    },
+    {
+        "id": "38effe1154baf3eb",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "affb5bc51aa0339a",
+        "type": "mqtt-broker",
+        "name": "TTN",
+        "broker": "192.168.230.102",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "2",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "a2496d1cdfbd32ce",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "https://thingsboard.intelory.com/",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "58665ec3cde43e85",
+        "type": "mqtt-broker",
+        "name": "RPI",
+        "broker": "192.168.0.30",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "9f30c7eb7c5d9217",
+        "type": "mqtt-broker",
+        "name": "test",
+        "broker": "192.168.230.102",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "b7a17307.b39d88",
+        "type": "mqtt-broker",
+        "name": "ChirpStack Broker",
+        "broker": "mqtt.eclipse.org",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
+        "id": "e18d574e72fe4f2e",
+        "type": "mqtt-broker",
+        "name": "TTN",
+        "broker": "eu1.cloud.thethings.network",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "2",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "cb4c5b2cc8e70be6",
+        "type": "tls-config",
+        "name": "",
+        "cert": "",
+        "key": "",
+        "ca": "",
+        "certname": "",
+        "keyname": "",
+        "caname": "",
+        "servername": "",
+        "verifyservercert": true,
+        "alpnprotocol": ""
+    },
+    {
+        "id": "748fbcf93143dfb5",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "mqtt.example.com",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "6cb06af3d023470d",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "b14bb37b053b48ffaf35a0aa1682d5b2.s2.eu.hivemq.cloud",
+        "port": "8884",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "41a56e9da556b31d",
+        "type": "mqtt-broker",
+        "name": "test",
+        "broker": "mqtt.intelory.com",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "2ae5efea297ea709",
+        "type": "mqtt-broker",
+        "name": "local",
+        "broker": "192.168.1.102",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "3",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "c0d76177421e542a",
+        "type": "mqtt-broker",
+        "name": "mqtt.intelory.com",
+        "broker": "mqtt.intelory.com",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "2faeefbad8123d34",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "public.mqtthq.com",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "0bac5dfbf8370db6",
+        "type": "mqtt-broker",
+        "name": "MQTT Broker",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": false,
+        "keepalive": 60,
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": ""
+    },
+    {
+        "id": "3ec726c1881eaa30",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "mqtt://localhost",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": false,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
+        "id": "cc9cea0d8747b75c",
+        "type": "mqtt-broker",
+        "name": "MQTT Broker",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": true,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
+        "id": "8fb482d5790b6f6a",
+        "type": "mqtt-broker",
+        "name": "Chirpstack_Mqtt_Docker_Local",
+        "broker": "192.168.230.102:1883",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "3",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "d54cd0ba46718c87",
+        "type": "http proxy",
+        "name": "",
+        "url": "http://localhost:3001",
+        "noproxy": []
+    },
+    {
+        "id": "1a3042f48fcd1d32",
+        "type": "http proxy",
+        "name": "",
+        "url": "https://192.168.230.1",
+        "noproxy": []
+    },
+    {
+        "id": "658225dd2ae5fb20",
+        "type": "mqtt-broker",
+        "name": "LoraMQTT",
+        "broker": "mqtt.intelory.com",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "compatmode": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "ffcc300181243603",
+        "type": "mqtt-broker",
+        "name": "RPI",
+        "broker": "192.168.50.12",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "5d1c2b0e.6b3f3c",
+        "type": "mqtt-broker",
+        "broker": "mqtt.intelory.com",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "compatmode": false,
+        "protocolVersion": 4,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {
+            "topic": "",
+            "payload": ""
+        },
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {
+            "topic": "",
+            "payload": ""
+        },
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {
+            "topic": "",
+            "payload": ""
+        }
+    },
+    {
+        "id": "a18e7ff4.292c58",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "mqtt://mqtt.intelory.com",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": true,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
+        "id": "f702e1ecb14c730e",
+        "type": "sqlitedb",
+        "db": "/home/intelory/Aduvi.db  ",
+        "mode": "RWC"
+    },
+    {
+        "id": "fdaeb6eaba77969d",
+        "type": "function",
+        "z": "6f5103d5c454ca96",
+        "name": "Set status",
+        "func": "let currentInput = global.get(msg.input) || {};\ncurrentInput.status = msg.status || \"success\";\nglobal.set(msg.input, currentInput);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1000,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9ee53087ce411198",
+        "type": "change",
+        "z": "6f5103d5c454ca96",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "status",
+                "pt": "msg",
+                "to": "error",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 760,
+        "y": 100,
+        "wires": [
+            [
+                "fdaeb6eaba77969d"
+            ]
+        ]
+    },
+    {
+        "id": "21350a7c045bf00e",
+        "type": "exec",
+        "z": "6f5103d5c454ca96",
+        "command": " evtest ",
+        "addpay": "payload",
+        "append": "",
+        "useSpawn": "true",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 550,
+        "y": 100,
+        "wires": [
+            [
+                "47086de49525c4a2"
+            ],
+            [
+                "9ee53087ce411198"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "d3f5590cf8ce800a",
+        "type": "function",
+        "z": "6f5103d5c454ca96",
+        "name": "Check error and set command",
+        "func": "const input = global.get(msg.input);\nif(!input){\n    msg.payload = \"/dev/input/event\" + msg.input[msg.input.length - 1];\n    return msg;\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 290,
+        "y": 100,
+        "wires": [
+            [
+                "21350a7c045bf00e"
+            ]
+        ]
+    },
+    {
+        "id": "47086de49525c4a2",
+        "type": "function",
+        "z": "6f5103d5c454ca96",
+        "name": "Prepare input",
+        "func": "var input_events = msg.payload.split('\\n');\nfor (var i = 0; i < input_events.length; i++) {\n    var event = input_events[i].trim();\n    if (event.indexOf('EV_KEY') >= 0) {\n        var event_type = event.match(/type\\s+(\\d+)/)[1];\n        var event_code = event.match(/code\\s+(\\d+)/)[1];\n        var event_value = event.match(/value\\s+(\\d+)/)[1];\n\n        // Generate readable string for key event\n        var key_string = \"\";\n        if (event_type == 1 && event_value == 1) {\n            switch (event_code) {\n                case '1':\n                    key_string = \"ESC\";\n                    break;\n                case '2':\n                    key_string = \"1\";\n                    break;\n                case '3':\n                    key_string = \"2\";\n                    break;\n                default:\n                    key_string = event_code;\n                // Add more cases for other key codes\n            }\n            if (key_string != \"\") {\n                msg.status = 'success';\n                node.send({ payload: key_string });\n            }\n        }\n    }\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 780,
+        "y": 40,
+        "wires": [
+            [
+                "b04e7bba61e763ae",
+                "fdaeb6eaba77969d"
+            ]
+        ]
+    },
+    {
+        "id": "b04e7bba61e763ae",
+        "type": "debug",
+        "z": "6f5103d5c454ca96",
+        "name": "debug 5",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1180,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "f84ece17eac776ad",
+        "type": "catch",
+        "z": "6f5103d5c454ca96",
+        "name": "",
+        "scope": null,
+        "uncaught": false,
+        "x": 120,
+        "y": 240,
+        "wires": [
+            [
+                "f3a0182590d7a3cd"
+            ]
+        ]
+    },
+    {
+        "id": "f3a0182590d7a3cd",
+        "type": "debug",
+        "z": "6f5103d5c454ca96",
+        "name": "debug 6",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 340,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "1e5d5e5e.55afef",
+        "type": "function",
+        "z": "6f5103d5c454ca96",
+        "name": "Parse Input Event",
+        "func": "var input_events = msg.payload.split('\\n');\n\nfor (var i = 0; i < input_events.length; i++) {\n    var event = input_events[i].trim();\n\n    if (event.indexOf('EV_KEY') >= 0) {\n        var event_type = event.match(/type\\s+(\\w+)/)[1];\n        var event_code = event.match(/code\\s+(\\w+)/)[1];\n        var event_value = event.match(/value\\s+(-?\\d+)/)[1];\n\n        // Generate readable string for key event\n        var key_string = \"\";\n        if (event_type == 1 && event_value == 1) {\n            switch (event_code) {\n                case '1':\n                    key_string = \"ESC\";\n                    break;\n                case '48':\n                    key_string = \"B\";\n                    break;\n                case '63':\n                    key_string = \"F5\";\n                    break;\n                case '104':\n                    key_string = \"PAGEUP\";\n                    break;\n                case '109':\n                    key_string = \"PAGEDOWN\";\n                    break;\n                case '26':\n                    key_string = \"LEFTBRACE\";\n                    break;\n                case '29':\n                    key_string = \"LEFTCTRL\";\n                    break;\n                case '42':\n                    key_string = \"LEFTSHIFT\";\n                    break;\n                case '56':\n                    key_string = \"LEFTALT\";\n                    break;\n                case '105':\n                    key_string = \"LEFT\";\n                    break;\n                case '125':\n                    key_string = \"LEFTMETA\";\n                    break;\n                // Add more cases for other key codes\n                default:\n                    key_string = \"UNKNOWN\";\n                    break;\n            }\n\n            if (key_string != \"\") {\n                msg.status = 'success';\n                node.send({ payload: key_string, status: msg.status });\n            }\n        }\n    }\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 870,
+        "y": 360,
+        "wires": [
+            [
+                "3b3d02c5.5a7ddc"
+            ]
+        ]
+    },
+    {
+        "id": "3b3d02c5.5a7ddc",
+        "type": "debug",
+        "z": "6f5103d5c454ca96",
+        "name": "Output",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "status",
+        "statusType": "msg",
+        "x": 1130,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "20aa2142dae5797c",
+        "type": "function",
+        "z": "6f5103d5c454ca96",
+        "name": "function 5",
+        "func": "const uuid = require('uuid');\n\n// Generate a UUID\nconst scannerUUID = uuid.v4();\n\n// Parse the input from the evtest command\nconst inputEvents = msg.payload.trim().split('\\n');\n\nlet outputString = '';\nfor (let i = 0; i < inputEvents.length; i++) {\n    const event = inputEvents[i].trim();\n    if (event.indexOf('EV_KEY') >= 0) {\n        const eventType = event.match(/type\\s+(\\d+)/)[1];\n        const eventCode = event.match(/code\\s+(\\d+)/)[1];\n        const eventValue = event.match(/value\\s+(\\d+)/)[1];\n\n        // Generate readable string for key event\n        let keyString = '';\n        if (eventType == 1 && eventValue == 1) {\n            switch (eventCode) {\n                case '1':\n                    keyString = 'ESC';\n                    break;\n                case '2':\n                    keyString = '1';\n                    break;\n                case '3':\n                    keyString = '2';\n                    break;\n                default:\n                    keyString = eventCode;\n                // Add more cases for other key codes\n            }\n            if (keyString != '') {\n                outputString += keyString;\n            }\n        }\n    }\n}\n\n// Add the scanner UUID to the output string\noutputString += '\\nScanner UUID: ' + scannerUUID;\n\n// Send the output to the debug node\nmsg.payload = outputString;\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 620,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ce8359421941d413",
+        "type": "function",
+        "z": "6f5103d5c454ca96",
+        "name": "function 6",
+        "func": "var input_events = msg.payload.split('\\n');\nvar uuid_regex = /[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-4[0-9a-fA-F]{3}-[89aAbB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}/;\nvar uuid_string = \"\";\n\nfor (var i = 0; i < input_events.length; i++) {\n    var event = input_events[i].trim();\n    if (uuid_regex.test(event)) {\n        uuid_string = event;\n        break;\n    }\n}\n\nmsg.payload = uuid_string;\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 740,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c1d974006a49b152",
+        "type": "debug",
+        "z": "6f5103d5c454ca96",
+        "name": "debug 7",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1020,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "4aaa21ad7ad06dc4",
+        "type": "inject",
+        "z": "50a8ee8d5e0b88bf",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 190,
+        "y": 100,
+        "wires": [
+            [
+                "a09d77c0753d4651",
+                "b95167270db760d7",
+                "40e6943ee0b4e496",
+                "c8b88159595c86ca"
+            ]
+        ]
+    },
+    {
+        "id": "40e6943ee0b4e496",
+        "type": "function",
+        "z": "50a8ee8d5e0b88bf",
+        "name": "Decoder 2",
+        "func": "// Last time edited  15:16 , 24/07/2023\n\n// ✔✔ this decoder offers a decoding logic for soil mositure when wrong data being decoded as result of a length of the palyoad that changes despite the periodic interval \n// function Decoder2(data) {\n//     let decodingRules = [\n       \n//         { pattern: \"67\", propertyName: \"soilTemperature\", bytesToDecode: 2, scaleFactor: 0.1 },\n//         { pattern: \"C0\", propertyName: \"soilEC\", bytesToDecode: 4, scaleFactor: 0.001 }\n//     ];\n\n//     const decodedData = {};\n\n//     let trimmedPayload = data.substr(12);\n\n//     let decodedLastValue = null; // Variable to store the soilMoisture value if found\n\n//     decodingRules.forEach(rule => {\n//         if (trimmedPayload.includes(rule.pattern)) {\n//             const index = trimmedPayload.indexOf(rule.pattern);\n//             let zerosCount = 0;\n//             while (trimmedPayload[index + rule.pattern.length + zerosCount] === \"0\") {\n//                 zerosCount++;\n//             }\n//             let bytes = trimmedPayload.substr(index + rule.pattern.length + zerosCount, rule.bytesToDecode);\n//             let value = parseInt(bytes, 16);\n\n//             if (rule.scaleFactor) {\n//                 value = value * rule.scaleFactor;\n//                 value = parseFloat(value.toFixed(4));\n//             }\n\n//             decodedData[rule.propertyName] = value;\n//         }\n//     });\n\n    // let lastIndex = trimmedPayload.lastIndexOf(\"70\");\n    // if (lastIndex !== -1) {\n    //     let lastValueIndex = lastIndex + 2;\n    //     let lastValueBytes = trimmedPayload.substr(lastValueIndex, 4);\n    //     let lastValue = parseInt(lastValueBytes, 16);\n    //     let scaleFactor = 0.1;\n    //     decodedLastValue = lastValue * scaleFactor;\n    //     decodedLastValue = parseFloat(decodedLastValue.toFixed(1));\n    // }\n\n    // // Check if soilMoisture is already decoded and capped at 100, then use the original value\n    // if (decodedData.soilMoisture !== undefined && decodedData.soilMoisture <= 100) {\n    //     decodedData.soilMoisture = decodedData.soilMoisture;\n    // } else if (decodedLastValue !== null && decodedLastValue <= 100) {\n    //     // If the soilMoisture was not previously decoded or was greater than 100, then use the new value\n    //     decodedData.soilMoisture = decodedLastValue;\n    // }\n\n    // return decodedData;\n// }\n\n// global.set('Decoder2', Decoder2);\n\n\nfunction Decoder2(data) {\n    let decodingRules = [\n        { pattern: \"67\", propertyName: \"soilTemperature\", bytesToDecode: 2, scaleFactor: 0.1 },\n        { pattern: \"C0\", propertyName: \"soilEC\", bytesToDecode: 4, scaleFactor: 0.001 }\n    ];\n\n    const decodedData = {};\n\n    let trimmedPayload = data.substr(12);\n\n    let decodedLastValue = null; // Variable to store the soilMoisture value if found\n\n    decodingRules.forEach(rule => {\n        if (rule.pattern === \"C0\" && trimmedPayload.includes(rule.pattern)) {\n            const indices = [];\n            let currentIndex = trimmedPayload.indexOf(rule.pattern);\n            while (currentIndex !== -1) {\n                indices.push(currentIndex);\n                currentIndex = trimmedPayload.indexOf(rule.pattern, currentIndex + 1);\n            }\n            indices.forEach(index => {\n                let bytesToDecode = rule.bytesToDecode;\n                // Handle the \"C0\" pattern differently\n                if (index + 2 === trimmedPayload.length) {\n                    bytesToDecode = 2;\n                }\n                let bytes = trimmedPayload.substr(index + 2, bytesToDecode);\n                let value = parseInt(bytes, 16);\n\n                if (rule.scaleFactor) {\n                    value = value * rule.scaleFactor;\n                    value = parseFloat(value.toFixed(4));\n                }\n\n                decodedData[rule.propertyName] = value;\n            });\n        } else if (trimmedPayload.includes(rule.pattern)) {\n            const index = trimmedPayload.indexOf(rule.pattern);\n            let zerosCount = 0;\n            while (trimmedPayload[index + rule.pattern.length + zerosCount] === \"0\") {\n                zerosCount++;\n            }\n            let bytes = trimmedPayload.substr(index + rule.pattern.length + zerosCount, rule.bytesToDecode);\n            let value = parseInt(bytes, 16);\n\n            if (rule.scaleFactor) {\n                value = value * rule.scaleFactor;\n                value = parseFloat(value.toFixed(4));\n            }\n\n            decodedData[rule.propertyName] = value;\n        }\n    });\n\n    let lastIndex = trimmedPayload.lastIndexOf(\"70\");\n    if (lastIndex !== -1) {\n        let lastValueIndex = lastIndex + 2;\n        let lastValueBytes = trimmedPayload.substr(lastValueIndex, 4);\n        let lastValue = parseInt(lastValueBytes, 16);\n        let scaleFactor = 0.1;\n        decodedLastValue = lastValue * scaleFactor;\n        decodedLastValue = parseFloat(decodedLastValue.toFixed(1));\n    }\n\n    // Check if soilMoisture is already decoded and capped at 100, then use the original value\n    if (decodedData.soilMoisture !== undefined && decodedData.soilMoisture <= 100) {\n        decodedData.soilMoisture = decodedData.soilMoisture;\n    } else if (decodedLastValue !== null && decodedLastValue <= 100) {\n        // If the soilMoisture was not previously decoded or was greater than 100, then use the new value\n        decodedData.soilMoisture = decodedLastValue;\n    }\n\n    return decodedData;\n\n}\n\nglobal.set('Decoder2', Decoder2);\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 120,
+        "wires": [
+            []
+        ],
+        "icon": "node-red-contrib-lora-data-decrypt/lora.png"
+    },
+    {
+        "id": "a09d77c0753d4651",
+        "type": "function",
+        "z": "50a8ee8d5e0b88bf",
+        "name": "Decoder 1 ",
+        "func": "// function Decoder1(data) {\n//     var decodingRules = [\n//         { pattern: \"C2\", propertyName: \"soil_pH\", bytesToDecode: 2, scaleFactor: 0.1 }\n//     ];\n\n//     var decodedData = {};\n\n//     var trimmedPayload = data.substr(12); // Remove the prefix \"007E00170301\"\n\n//     decodingRules.forEach(rule => {\n//         if (trimmedPayload.includes(rule.pattern)) {\n//             var index = trimmedPayload.indexOf(rule.pattern);\n//             var bytes = trimmedPayload.substr(index + rule.pattern.length, rule.bytesToDecode);\n//             var value = parseInt(bytes, 16);\n\n//             if (rule.scaleFactor) {\n//                 value = value * rule.scaleFactor;\n//                 value = parseFloat(value.toFixed(1)); // Limit decimal places to 1\n//             }\n\n//             decodedData[rule.propertyName] = value;\n//         }\n//     });\n\n//     return decodedData;\n// }\n\n// global.set('Decoder1', Decoder1);\n\nfunction Decoder1(data) {\n    let decodingRules = [\n        { pattern: \"C2\", propertyName: \"soil_pH\", bytesToDecode: 2, scaleFactor: 0.1 }\n        \n    ];\n\n    let decodedData = {};\n\n    let trimmedPayload = data.substr(12); // Remove the prefix \"007E00170301\"\n\n    decodingRules.forEach(rule => {\n        if (trimmedPayload.includes(rule.pattern)) {\n            let index = trimmedPayload.indexOf(rule.pattern);\n            let zerosCount = 0;\n            while (trimmedPayload[index + rule.pattern.length + zerosCount] === \"0\") {\n                zerosCount++;\n            }\n            let bytes = trimmedPayload.substr(index + rule.pattern.length + zerosCount, rule.bytesToDecode);\n            let value = parseInt(bytes, 16);\n\n            if (rule.scaleFactor) {\n                value = value * rule.scaleFactor;\n                value = parseFloat(value.toFixed(4)); // Limit decimal places to 3\n            }\n\n            decodedData[rule.propertyName] = value;\n        }\n    });\n\n    // Additional decoding based on remaining payload\n    let remainingPayload = trimmedPayload.substr(10); // Remove the already decoded part \"9A03\"\n\n    // Example: Decode additional property \"someProperty\"\n    if (remainingPayload.length >= 4) {\n        let somePropertyBytes = remainingPayload.substr(0, 4);\n        let somePropertyValue = parseInt(somePropertyBytes, 16);\n        decodedData.someProperty = somePropertyValue;\n    }\n    delete decodedData.someProperty;\n\n    return decodedData;\n}\n\nglobal.set('Decoder1', Decoder1);\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 80,
+        "wires": [
+            []
+        ],
+        "icon": "node-red-contrib-lora-data-decrypt/lora.png"
+    },
+    {
+        "id": "b95167270db760d7",
+        "type": "function",
+        "z": "50a8ee8d5e0b88bf",
+        "name": "Decoder 3 ",
+        "func": "// Last time edited  15:30 , 24/07/2023\nfunction Decoder3(data) {\n    let decodingRules = [\n        { pattern: \"67\", propertyName: \"temperature\", bytesToDecode: 4, scaleFactor: 0.1 },\n        { pattern: \"68\", propertyName: \"humidity\", bytesToDecode: 2, scaleFactor: 1},\n        { pattern: \"73\", propertyName: \"barometer\", bytesToDecode: 8, scaleFactor: 0.1 }\n    ];\n\n    const decodedData = {};\n\n    let trimmedPayload = data.substr(12); // Remove the prefix \"007E00170301\"\n\n    decodingRules.forEach(rule => {\n        if (trimmedPayload.includes(rule.pattern)) {\n            const index = trimmedPayload.indexOf(rule.pattern);\n            let bytes = trimmedPayload.substr(index + rule.pattern.length, rule.bytesToDecode);\n            let value = parseInt(bytes, 16);\n\n            if (rule.scaleFactor) {\n                value = value * rule.scaleFactor;\n                value = parseFloat(value.toFixed(4)); // Limit decimal places to 4\n            }\n\n            decodedData[rule.propertyName] = value;\n        }\n    });\n\n    return decodedData;\n}\n\n// Assigning the Decoder3 function to the global context for testing\nglobal.set('Decoder3', Decoder3);\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 160,
+        "wires": [
+            []
+        ],
+        "icon": "node-red-contrib-lora-data-decrypt/lora.png"
+    },
+    {
+        "id": "c8b88159595c86ca",
+        "type": "function",
+        "z": "50a8ee8d5e0b88bf",
+        "name": "Weather_Station_Decoder",
+        "func": "\nfunction ws_decoder(data) {\n    const bytes = Buffer.from(data, 'hex');\n    const decoded = {};\n\n    let i = 0;\n\n    function readUInt32LE(bytes, offset) {\n        const value = (bytes[offset + 3] << 24) + (bytes[offset + 2] << 16) + (bytes[offset + 1] << 8) + bytes[offset];\n        return (value & 0xffffffff) >>> 0;\n    }\n\n    while (i < bytes.length) {\n        const channel_id = bytes[i++];\n        const channel_type = bytes[i++];\n\n        if (channel_id === 0x01 && channel_type === 0x75) {\n            decoded.battery = bytes[i];\n            i += 1;\n        } else if (channel_id === 0x03 && channel_type === 0x67) {\n            const temperature = Math.round(bytes.readInt16LE(i) / 10 * 10) / 10;\n            decoded.temperature = (temperature >= -40 && temperature <= 85) ? temperature : null;\n            i += 2;\n        } else if (channel_id === 0x04 && channel_type === 0x68) {\n            const humidity = Math.round((bytes[i] / 2) * 10) / 10;\n            decoded.humidity = (humidity >= 0 && humidity <= 100) ? humidity : null;\n            i += 1;\n        } else if (channel_id === 0x05 && channel_type === 0x84) {\n            const wind_direction = Math.round(bytes.readInt16LE(i) / 10 * 10) / 10;\n            decoded.wind_direction = (wind_direction >= 0 && wind_direction <= 360) ? wind_direction : null;\n            i += 2;\n        } else if (channel_id === 0x06 && channel_type === 0x73) {\n            const pressure = Math.round(bytes.readUInt16LE(i) / 10 * 10) / 10;\n            decoded.pressure = (pressure >= 500 && pressure <= 1100) ? pressure : null;\n            i += 2;\n        } else if (channel_id === 0x07 && channel_type === 0x92) {\n            const wind_speed = Math.round(bytes.readUInt16LE(i) / 10 * 10) / 10;\n            decoded.wind_speed = (wind_speed >= 0 && wind_speed <= 60) ? wind_speed : null;\n            i += 2;\n        } else if (channel_id === 0x08 && (channel_type === 0x77 || channel_type === 0xec)) {\n            const rainfall_total = channel_type === 0x77 ? Math.round(bytes.readUInt16LE(i) / 100 * 100) / 100 : readUInt32LE(bytes, i);\n            decoded.rainfall_total = (rainfall_total >= 0 && rainfall_total <= 500) ? rainfall_total : null;\n            decoded.rainfall_counter = bytes[i + (channel_type === 0x77 ? 2 : 4)];\n            i += channel_type === 0x77 ? 3 : 5;\n        } else {\n            break;\n        }\n    }\n\n    return decoded;\n}\n\nglobal.set('ws_decoder', ws_decoder);\n\nmsg.payload = global.get('ws_decoder')(msg.payload.data);\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 200,
+        "wires": [
+            []
+        ],
+        "icon": "node-red-contrib-lora-data-decrypt/lora.png"
+    },
+    {
+        "id": "a9ffe1edb15d50fe",
+        "type": "comment",
+        "z": "50a8ee8d5e0b88bf",
+        "name": "Update Decoded WTS",
+        "info": "function ws_decoder(data) {\n    const bytes = Buffer.from(data, 'hex');\n    const decoded = {};\n\n    let i = 0;\n\n    function readUInt32LE(bytes, offset) {\n        const value = (bytes[offset + 3] << 24) + (bytes[offset + 2] << 16) + (bytes[offset + 1] << 8) + bytes[offset];\n        return (value & 0xffffffff) >>> 0;\n    }\n\n    while (i < bytes.length) {\n        const channel_id = bytes[i++];\n        const channel_type = bytes[i++];\n\n        if (channel_id === 0x01 && channel_type === 0x75) {\n            decoded.battery = bytes[i++];\n        } else if (channel_id === 0x03 && channel_type === 0x67) {\n            decoded.temperature = Math.round(bytes.readInt16LE(i) / 10 * 10) / 10;\n            if (decoded.temperature < -40 || decoded.temperature >= 85) return null;\n            i += 2;\n        } else if (channel_id === 0x04 && channel_type === 0x68) {\n            decoded.humidity = Math.round((bytes[i++] / 2) * 10) / 10;\n            if (decoded.humidity < 0 || decoded.humidity >= 100) return null;\n        } else if (channel_id === 0x05 && channel_type === 0x84) {\n            decoded.wind_direction = Math.round(bytes.readInt16LE(i) / 10 * 10) / 10;\n            if (decoded.wind_direction < 0 || decoded.wind_direction >= 360) return null;\n            i += 2;\n        } else if (channel_id === 0x06 && channel_type === 0x73) {\n            decoded.pressure = Math.round((bytes.readUInt16LE(i) / 1000) * 10) / 10;\n            if (decoded.pressure < 500 || decoded.pressure >= 1100) return null;\n            i += 2;\n        } else if (channel_id === 0x07 && channel_type === 0x92) {\n            decoded.wind_speed = Math.round((bytes.readUInt16LE(i) / 1000) * 10) / 10;\n            if (decoded.wind_speed < 0 || decoded.wind_speed >= 60) return null;\n            i += 2;\n        } else if (channel_id === 0x08 && (channel_type === 0x77 || channel_type === 0xec)) {\n            const rainfall_total = channel_type === 0x77 ? Math.round(bytes.readUInt16LE(i) / 100 * 100) / 100 : readUInt32LE(bytes, i);\n            decoded.rainfall_total = rainfall_total;\n            decoded.rainfall_counter = bytes[i + (channel_type === 0x77 ? 2 : 4)];\n            i += channel_type === 0x77 ? 3 : 5;\n            \n            // Validate Rainfall Total\n            if (decoded.rainfall_total < 0 || decoded.rainfall_total > 500) return null;\n        } else {\n            break;\n        }\n    }\n\n    return decoded;\n}\n\nglobal.set('ws_decoder', ws_decoder);\n",
+        "x": 720,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "aed69f7f9a79008a",
+        "type": "function",
+        "z": "329aeab1d042e71f",
+        "name": "Slice ProbeID",
+        "func": "const payload = msg.payload;\n\nconst deviceID = payload.devEUI;\nconst deviceName = payload.deviceName;\nconst data = payload.data;\nconst fPort = payload.fPort;\n\nif (deviceID === \"70b3d57ed005dbd0\") {\n    const probeID = data.slice(4, 10);\n    msg.probeID = probeID;\n}\nelse {\n    return null;\n}\n\nmsg.payload = {\n    deviceID: deviceID,\n    deviceName: deviceName,\n    data: payload.data,\n    fPort: fPort,\n    probeID: msg.probeID\n};\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 200,
+        "y": 80,
+        "wires": [
+            [
+                "d841f11dc5d2d855"
+            ]
+        ]
+    },
+    {
+        "id": "d841f11dc5d2d855",
+        "type": "function",
+        "z": "329aeab1d042e71f",
+        "name": "Assign ProbeID to Device_type",
+        "func": "const payload = msg.payload;\nconst probeID = msg.probeID;\n\nlet deviceType;\n\nswitch (probeID) {\n    case '00091':\n        deviceType = 1;\n        break;\n    case '001703':\n        deviceType = 2;\n        break;\n    case '00160A':\n        deviceType = 3;\n        break;\n    default:\n        deviceType = null;\n}\n\nif (deviceType !== null) {\n    msg.deviceType = deviceType;\n    payload.deviceType = deviceType;\n}\n\nmsg.payload = {\n    deviceID: payload.devEUI,\n    deviceName: payload.deviceName,\n    data: msg.payload.data,\n    fPort: payload.fPort,\n    probeID: probeID,\n    deviceType: deviceType\n};\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 80,
+        "wires": [
+            [
+                "0da642b7d17590f7"
+            ]
+        ]
+    },
+    {
+        "id": "0da642b7d17590f7",
+        "type": "function",
+        "z": "329aeab1d042e71f",
+        "name": "Call Decoders",
+        "func": "let payload = msg.payload;\nlet deviceType = payload.deviceType;\n\nlet decoder1 = global.get('Decoder1');\nlet decoder2 = global.get('Decoder2');\nlet decoder3 = global.get('Decoder3');\n\nlet decodedData;\n\nif (deviceType === 1) {\n    decodedData = decoder1(payload.data);\n} else if (deviceType === 2) {\n    decodedData = decoder2(payload.data);\n} else if (deviceType === 3) {\n    decodedData = decoder3(payload.data);\n} else {\n    decodedData = {};\n}\n\npayload.decodedData = decodedData;\n\nmsg.payload = {\n    deviceID: msg.payload.deviceID,\n    deviceName: msg.payload.deviceName,\n    deviceType: msg.payload.deviceType,\n    fPort: msg.payload.fPort,\n    barometer: msg.payload.decodedData.barometer,\n    humidity: msg.payload.decodedData.humidity,\n    soilpH: msg.payload.decodedData.soil_pH,\n    soilEC: msg.payload.decodedData.soilEC,\n    soilTemperature: msg.payload.decodedData.soilTemperature,\n    soilMoisture: msg.payload.decodedData.soilMoisture,\n    airTemperature: msg.payload.decodedData.temperature\n};\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 700,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b5d7ff678d2b458b",
+        "type": "ui_svg_graphics",
+        "z": "929450001e86a571",
+        "group": "",
+        "order": 0,
+        "width": "12",
+        "height": "8",
+        "svgString": "<svg x=\"0\" y=\"0\" height=\"100\" viewBox=\"0 0 100 100\" width=\"100\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:svg=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n<!-- Add here your SVG shapes (circles, rectangles, ...) -->\n<!-- Or remove everything, if you want to paste an entire drawing (<svg...>...</svg>).-->\n</svg>",
+        "clickableShapes": [],
+        "javascriptHandlers": [],
+        "smilAnimations": [],
+        "bindings": [],
+        "showCoordinates": false,
+        "autoFormatAfterEdit": false,
+        "showBrowserErrors": false,
+        "showBrowserEvents": false,
+        "enableJsDebugging": false,
+        "sendMsgWhenLoaded": false,
+        "noClickWhenDblClick": false,
+        "outputField": "payload",
+        "editorUrl": "//drawsvg.org/drawsvg.html",
+        "directory": "",
+        "panning": "disabled",
+        "zooming": "disabled",
+        "panOnlyWhenZoomed": false,
+        "doubleClickZoomEnabled": false,
+        "mouseWheelZoomEnabled": false,
+        "dblClickZoomPercentage": 150,
+        "cssString": "div.ui-svg svg{\n    color: var(--nr-dashboard-widgetColor);\n    fill: currentColor !important;\n}\ndiv.ui-svg path {\n    fill: inherit;\n}",
+        "name": "",
+        "x": 400,
+        "y": 200,
+        "wires": [
+            [
+                "b81a2f382812a9e9"
+            ]
+        ]
+    },
+    {
+        "id": "fb1f213415413bc9",
+        "type": "inject",
+        "z": "929450001e86a571",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 240,
+        "wires": [
+            [
+                "b5d7ff678d2b458b"
+            ]
+        ]
+    },
+    {
+        "id": "b81a2f382812a9e9",
+        "type": "debug",
+        "z": "929450001e86a571",
+        "name": "debug 11",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 680,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "a989e3393a857ff3",
+        "type": "inject",
+        "z": "20308fc0b17a15ef",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            },
+            {
+                "p": "input",
+                "v": "input1",
+                "vt": "str"
+            },
+            {
+                "p": "stauts",
+                "v": "success",
+                "vt": "str"
+            }
+        ],
+        "repeat": "10",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 100,
+        "wires": [
+            [
+                "3514d7278db68468"
+            ]
+        ]
+    },
+    {
+        "id": "5dd944d5.8d7d5c",
+        "type": "http request",
+        "z": "20308fc0b17a15ef",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "body",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 1330,
+        "y": 560,
+        "wires": [
+            [
+                "ee04e9d858ccb3b2"
+            ]
+        ]
+    },
+    {
+        "id": "f9c23d23.c8c24",
+        "type": "exec",
+        "z": "20308fc0b17a15ef",
+        "command": "cat /sys/devices/virtual/thermal/thermal_zone0/temp",
+        "addpay": false,
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "Odroid CPU Temperature",
+        "x": 410,
+        "y": 600,
+        "wires": [
+            [
+                "a0ad4644.0efbf8"
+            ],
+            [],
+            []
+        ],
+        "icon": "font-awesome/fa-arrow-right"
+    },
+    {
+        "id": "a0ad4644.0efbf8",
+        "type": "function",
+        "z": "20308fc0b17a15ef",
+        "name": "Extract CPU Temp",
+        "func": "msg.temperature = Number(msg.payload) / 1000 ;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 560,
+        "wires": [
+            [
+                "9c25f1b6.91b228"
+            ]
+        ]
+    },
+    {
+        "id": "a97d78fc.40c268",
+        "type": "inject",
+        "z": "20308fc0b17a15ef",
+        "name": "Send Payload ",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "3600",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 600,
+        "wires": [
+            [
+                "f9c23d23.c8c24"
+            ]
+        ]
+    },
+    {
+        "id": "8317134.cff18f",
+        "type": "debug",
+        "z": "20308fc0b17a15ef",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1650,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "9c25f1b6.91b228",
+        "type": "exec",
+        "z": "20308fc0b17a15ef",
+        "command": "hostname -I | cut -d' ' -f1",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "name": "Get IP Address",
+        "x": 900,
+        "y": 560,
+        "wires": [
+            [
+                "7a76657f.43b7dc"
+            ],
+            [],
+            []
+        ],
+        "outputLabels": [
+            "stdout",
+            "",
+            "stderr"
+        ],
+        "icon": "font-awesome/fa-terminal"
+    },
+    {
+        "id": "7a76657f.43b7dc",
+        "type": "function",
+        "z": "20308fc0b17a15ef",
+        "name": "Convert to Number",
+        "func": "msg.payload = msg.payload.replace(/^\\s+|\\s+$/g, '');\nmsg.url = `https://www.iplocate.io/api/lookup/${msg.payload}`;\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1110,
+        "y": 560,
+        "wires": [
+            [
+                "5dd944d5.8d7d5c"
+            ]
+        ]
+    },
+    {
+        "id": "a1b2c3d4-e5f6-g7h8-i9j0-k1l2m3n4o5p6",
+        "type": "http request",
+        "z": "20308fc0b17a15ef",
+        "name": "Make POST request",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "apiURL + \"/restaurant/\" + vendor_id + \"/dispatch",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 1640,
+        "y": 280,
+        "wires": [
+            [
+                "b1c2d3e4-f5g6-h7i8-j9k0-l1m2n3o4p5q6"
+            ]
+        ]
+    },
+    {
+        "id": "b1c2d3e4-f5g6-h7i8-j9k0-l1m2n3o4p5q6",
+        "type": "debug",
+        "z": "20308fc0b17a15ef",
+        "name": "Response",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1860,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "d1e2f3g4-h5i6-j7k8-l9m0-n1o2p3q4r5s",
+        "type": "function",
+        "z": "20308fc0b17a15ef",
+        "name": "Set request parameters",
+        "func": "var vendor_id = \"VENDOR_ID\";\nvar apiURL = \"API_URL\";\nvar device = {\n    path: \"DEVICE_PATH\"\n};\nvar ids = {\n    DEVICE_PATH_HERE: \"PACKAGE_ID\"\n};\n\nvar headers = {\n    \"Content-Type\": \"application/json\"\n};\n\nvar payload = {\n    \"packageCode\": ids[device.path].toLowerCase(),\n    \"path\": device.path\n};\n\nmsg.method = \"POST\";\nmsg.url = apiURL + \"/restaurant/\" + vendor_id + \"/dispatch\";\nmsg.headers = headers;\nmsg.payload = payload;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1620,
+        "y": 220,
+        "wires": [
+            [
+                "a1b2c3d4-e5f6-g7h8-i9j0-k1l2m3n4o5p6"
+            ]
+        ]
+    },
+    {
+        "id": "ee04e9d858ccb3b2",
+        "type": "function",
+        "z": "20308fc0b17a15ef",
+        "name": "Prepare data",
+        "func": "const machineData = msg.payload;\nconst machineId = global.get(\"machineId\");\nconst temperature = msg.temperature;\n\nmsg.payload={\n    data: machineData,\n    machineId,\n    temperature\n};\nmsg.url=\"url to send data\";\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1490,
+        "y": 560,
+        "wires": [
+            [
+                "8317134.cff18f",
+                "a1b2c3d4-e5f6-g7h8-i9j0-k1l2m3n4o5p6"
+            ]
+        ]
+    },
+    {
+        "id": "77d0e0d8.86186c",
+        "type": "function",
+        "z": "20308fc0b17a15ef",
+        "name": "Scan Decode",
+        "func": "const fs = global.get('fs');\nconst evdev = global.get('evdev');\n\nconst fd = fs.openSync('/dev/input/event0', 'r');\nconst device = new evdev(fd);\n\nlet output = \"\";\n\nreturn new Promise((resolve, reject) => {\n    device.on('key', (ev) => {\n        if (ev.type === evdev.ecodes.EV_KEY && ev.value === 1) {\n            let char = evdev.events.KeyEvent(ev).keycode;\n            if (typeof char === 'string') {\n                char = char.replace('KEY_', '');\n                if (char === 'ENTER') {\n                    node.send({ payload: output });\n                    output = \"\";\n                } else {\n                    output += char;\n                }\n            }\n        }\n    });\n});",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 720,
+        "y": 700,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "01ce7448fe2f9d48",
+        "type": "debug",
+        "z": "20308fc0b17a15ef",
+        "name": "debug 4",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1120,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "3514d7278db68468",
+        "type": "subflow:6f5103d5c454ca96",
+        "z": "20308fc0b17a15ef",
+        "name": "",
+        "x": 390,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "3e1f44321450aa5a",
+        "type": "inject",
+        "z": "20308fc0b17a15ef",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            },
+            {
+                "p": "input",
+                "v": "input2",
+                "vt": "str"
+            },
+            {
+                "p": "stauts",
+                "v": "success",
+                "vt": "str"
+            }
+        ],
+        "repeat": "10",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 140,
+        "wires": [
+            [
+                "3514d7278db68468"
+            ]
+        ]
+    },
+    {
+        "id": "4bb1f489957123e1",
+        "type": "inject",
+        "z": "2cc3de6f703c3c3f",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "input",
+                "v": "event2",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 240,
+        "y": 140,
+        "wires": [
+            [
+                "dc488c26c27955e5"
+            ]
+        ]
+    },
+    {
+        "id": "dc488c26c27955e5",
+        "type": "exec",
+        "z": "2cc3de6f703c3c3f",
+        "command": "python3 /home/odroid/Desktop/scanner/scannerQR.py",
+        "addpay": "payload",
+        "append": "",
+        "useSpawn": "true",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 680,
+        "y": 160,
+        "wires": [
+            [
+                "e67d7e1244a834a1"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "a0db765d4657d9d6",
+        "type": "debug",
+        "z": "2cc3de6f703c3c3f",
+        "name": "debug 8",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1180,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "e67d7e1244a834a1",
+        "type": "json",
+        "z": "2cc3de6f703c3c3f",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": true,
+        "x": 990,
+        "y": 200,
+        "wires": [
+            [
+                "a0db765d4657d9d6"
+            ]
+        ]
+    },
+    {
+        "id": "9f30e0f546e94182",
+        "type": "ui_svg_graphics",
+        "z": "2cc3de6f703c3c3f",
+        "group": "",
+        "order": 0,
+        "width": "16",
+        "height": "13",
+        "svgString": "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" width=\"757px\" height=\"757px\" viewBox=\"0 0 757 757\" preserveAspectRatio=\"xMidYMid meet\"><g id=\"svgEditorBackgroundLayer\"><image id=\"svgEditorBackgroundImage\" x=\"0\" y=\"0\" width=\"757\" height=\"757\" xlink:href=\"data:image/webp;base64,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\" preserveAspectRatio=\"xMidYMid meet\"/><rect id=\"svgEditorBackground\" x=\"0\" y=\"0\" width=\"757\" height=\"757\" style=\"fill:none;stroke:none\"/></g></svg>",
+        "clickableShapes": [],
+        "javascriptHandlers": [
+            {
+                "selector": "#svgEditorBackgroundImage",
+                "action": "click",
+                "sourceCode": ""
+            }
+        ],
+        "smilAnimations": [],
+        "bindings": [],
+        "showCoordinates": false,
+        "autoFormatAfterEdit": true,
+        "showBrowserErrors": false,
+        "showBrowserEvents": false,
+        "enableJsDebugging": false,
+        "sendMsgWhenLoaded": false,
+        "noClickWhenDblClick": false,
+        "outputField": "ID",
+        "editorUrl": "//drawsvg.org/drawsvg.html",
+        "directory": "",
+        "panning": "disabled",
+        "zooming": "disabled",
+        "panOnlyWhenZoomed": false,
+        "doubleClickZoomEnabled": false,
+        "mouseWheelZoomEnabled": false,
+        "dblClickZoomPercentage": 150,
+        "cssString": "div.ui-svg svg{\n    color: var(--nr-dashboard-widgetColor);\n    fill: currentColor !important;\n}\ndiv.ui-svg path {\n    fill: inherit;\n}",
+        "name": "",
+        "x": 460,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "590a63c6af8d7f07",
+        "type": "bt-presence",
+        "z": "87c3aa459a8beaec",
+        "name": "phone",
+        "devices": "F0:18:98:D9:30:15",
+        "interval": "60",
+        "x": 390,
+        "y": 120,
+        "wires": [
+            [
+                "cfaa27cfdf86602c"
+            ]
+        ]
+    },
+    {
+        "id": "cfaa27cfdf86602c",
+        "type": "debug",
+        "z": "87c3aa459a8beaec",
+        "name": "debug 9",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 660,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "9e52614517665fde",
+        "type": "mqtt in",
+        "z": "966f942cddfa9911",
+        "name": "",
+        "topic": "eu868/gateway/ac1f09fffe08e4ef/event/up",
+        "qos": "1",
+        "datatype": "auto-detect",
+        "broker": "9f30c7eb7c5d9217",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 420,
+        "y": 220,
+        "wires": [
+            [
+                "c6fa22efc9283ff5",
+                "c2df842b1f3c39e3",
+                "eeef4b9f2fb1cd5e"
+            ]
+        ]
+    },
+    {
+        "id": "66c22d355c5ad439",
+        "type": "debug",
+        "z": "966f942cddfa9911",
+        "name": "debug 34",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1000,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "c6fa22efc9283ff5",
+        "type": "function",
+        "z": "966f942cddfa9911",
+        "name": "function 7",
+        "func": "// Assuming msg.payload contains the buffer\nvar bufferString = msg.payload.toString('utf8'); // Assuming the buffer contains UTF-8 encoded JSON data\nvar chirpstackData = JSON.parse(bufferString);\n\n// Extracting specific fields\nvar mType = chirpstackData.m_type;\nvar major = chirpstackData.major;\nvar devAddr = chirpstackData.devaddr;\nvar fCnt = chirpstackData.f_cnt;\nvar ack = chirpstackData.ack;\nvar adr = chirpstackData.adr;\nvar frequency = chirpstackData.frequency;\nvar bandwidth = chirpstackData.bandwidth;\nvar spreadingFactor = chirpstackData.spreadingFactor;\nvar power = chirpstackData.power;\n\n// Log the extracted fields to the Node-RED debug sidebar\nnode.warn(\"mType: \" + mType);\nnode.warn(\"major: \" + major);\nnode.warn(\"devAddr: \" + devAddr);\nnode.warn(\"fCnt: \" + fCnt);\nnode.warn(\"ack: \" + ack);\nnode.warn(\"adr: \" + adr);\nnode.warn(\"context: \" + context);\nnode.warn(\"frequency: \" + frequency);\nnode.warn(\"bandwidth: \" + bandwidth);\nnode.warn(\"spreadingFactor: \" + spreadingFactor);\nnode.warn(\"power: \" + power);\n\n// Pass along the original message\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 780,
+        "y": 300,
+        "wires": [
+            [
+                "66c22d355c5ad439"
+            ]
+        ]
+    },
+    {
+        "id": "eeef4b9f2fb1cd5e",
+        "type": "debug",
+        "z": "966f942cddfa9911",
+        "name": "debug 35",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 900,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "c2df842b1f3c39e3",
+        "type": "debug",
+        "z": "966f942cddfa9911",
+        "name": "debug 36",
+        "active": true,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 650,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "4b8763df6a74abb0",
+        "type": "mqtt in",
+        "z": "966f942cddfa9911",
+        "name": "",
+        "topic": "application/+/device/+/event/+",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "affb5bc51aa0339a",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 460,
+        "y": 560,
+        "wires": [
+            [
+                "5aa8f7192708ea14",
+                "e3cce4ef1e1f6076",
+                "687cd324d6b1ddc2"
+            ]
+        ]
+    },
+    {
+        "id": "5aa8f7192708ea14",
+        "type": "debug",
+        "z": "966f942cddfa9911",
+        "name": "debug 37",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 960,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "2be457c959d354b0",
+        "type": "mqtt out",
+        "z": "966f942cddfa9911",
+        "name": "",
+        "topic": "application/b640e794-6be4-4eb9-952f-f64ad59f4a7f/device/24e124460d320207/down",
+        "qos": "2",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "affb5bc51aa0339a",
+        "x": 960,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "687cd324d6b1ddc2",
+        "type": "function",
+        "z": "966f942cddfa9911",
+        "name": "function 8",
+        "func": "const payload = msg.payload;\nmsg.payload =  {\n    fPort: 85,\n    confirmed: true,\n    data: msg.payload\n};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 760,
+        "wires": [
+            [
+                "e4ecd3cde9ae2935"
+            ]
+        ]
+    },
+    {
+        "id": "504b33817becbe1d",
+        "type": "inject",
+        "z": "966f942cddfa9911",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "FF10FF",
+        "payloadType": "str",
+        "x": 330,
+        "y": 700,
+        "wires": [
+            [
+                "687cd324d6b1ddc2"
+            ]
+        ]
+    },
+    {
+        "id": "9b740a3b.5862d8",
+        "type": "inject",
+        "z": "966f942cddfa9911",
+        "name": "",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 400,
+        "y": 1000,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d6a0da09.21e9c8",
+        "type": "function",
+        "z": "966f942cddfa9911",
+        "name": "Create Downlink Message",
+        "func": "// Replace this with your own downlink message\nvar downlinkMessage = {\n    payload: \"Hello, ChirpStack!\",\n    port: 1, // Replace with your desired port\n};\n\n// Create the MQTT topic\nvar applicationID = \"b640e794-6be4-4eb9-952f-f64ad59f4a7f\";\nvar devEUI = \"24e124460d320207\";\nvar topic = `application/${applicationID}/device/${devEUI}/command/down`;\n\nreturn { topic: topic, payload: JSON.stringify(downlinkMessage) };",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 630,
+        "y": 1000,
+        "wires": [
+            [
+                "90acde10.2e78d"
+            ]
+        ]
+    },
+    {
+        "id": "90acde10.2e78d",
+        "type": "mqtt out",
+        "z": "966f942cddfa9911",
+        "name": "ChirpStack MQTT",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "broker": "b7a17307.b39d88",
+        "x": 860,
+        "y": 1000,
+        "wires": []
+    },
+    {
+        "id": "e4ecd3cde9ae2935",
+        "type": "debug",
+        "z": "966f942cddfa9911",
+        "name": "debug 38",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 940,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "98f5d9845f8de244",
+        "type": "function",
+        "z": "966f942cddfa9911",
+        "name": "function 9",
+        "func": "const payload = msg.payload;\nconst data = msg.payload.data;\nconst hexData = Buffer.from(data, 'base64').toString('hex');\nconst uppercaseHexData = hexData.toUpperCase();\n\nmsg.payload.data = uppercaseHexData;\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 880,
+        "y": 480,
+        "wires": [
+            [
+                "33a990f7b04deccc"
+            ]
+        ]
+    },
+    {
+        "id": "33a990f7b04deccc",
+        "type": "debug",
+        "z": "966f942cddfa9911",
+        "name": "debug 39",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1080,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "e3cce4ef1e1f6076",
+        "type": "function",
+        "z": "966f942cddfa9911",
+        "name": "function 10",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 710,
+        "y": 520,
+        "wires": [
+            [
+                "98f5d9845f8de244"
+            ]
+        ]
+    },
+    {
+        "id": "a4906065619f7691",
+        "type": "mqtt in",
+        "z": "966f942cddfa9911",
+        "name": "",
+        "topic": "application/+/device/+/event/+",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "affb5bc51aa0339a",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 420,
+        "y": 880,
+        "wires": [
+            [
+                "adb50f7c6caf94bb"
+            ]
+        ]
+    },
+    {
+        "id": "adb50f7c6caf94bb",
+        "type": "debug",
+        "z": "966f942cddfa9911",
+        "name": "debug 40",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 920,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "b036772ce0facb82",
+        "type": "inject",
+        "z": "966f942cddfa9911",
+        "name": "",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 350,
+        "y": 1160,
+        "wires": [
+            [
+                "a07f4af03320630b"
+            ]
+        ]
+    },
+    {
+        "id": "a07f4af03320630b",
+        "type": "function",
+        "z": "966f942cddfa9911",
+        "name": "function 11",
+        "func": "// msg.payload =  {\n//     confirmed: false,\n//     fPort: 85,\n//     data: \"/xD/\"\n// };\n// return msg;\n\nmsg.payload = {\n    devEui: \"24e124460d320207\", // Replace with your actual devEui\n    confirmed: false,\n    fPort: 85,\n    data: \"/xD/\"\n};\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 570,
+        "y": 1120,
+        "wires": [
+            [
+                "2dbdd25311bff6d4",
+                "a48159d5346d4f92"
+            ]
+        ]
+    },
+    {
+        "id": "2dbdd25311bff6d4",
+        "type": "mqtt out",
+        "z": "966f942cddfa9911",
+        "name": "",
+        "topic": "application/b640e794-6be4-4eb9-952f-f64ad59f4a7f/device/24e124460d320207/command/down",
+        "qos": "2",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "affb5bc51aa0339a",
+        "x": 1010,
+        "y": 1100,
+        "wires": []
+    },
+    {
+        "id": "a48159d5346d4f92",
+        "type": "debug",
+        "z": "966f942cddfa9911",
+        "name": "debug 41",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 820,
+        "y": 1160,
+        "wires": []
+    },
+    {
+        "id": "c54f63ad54141d7b",
+        "type": "mqtt in",
+        "z": "966f942cddfa9911",
+        "name": "",
+        "topic": "#",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "58665ec3cde43e85",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 330,
+        "y": 1260,
+        "wires": [
+            [
+                "ba11c9d645f04a35"
+            ]
+        ]
+    },
+    {
+        "id": "ba11c9d645f04a35",
+        "type": "debug",
+        "z": "966f942cddfa9911",
+        "name": "debug 42",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 680,
+        "y": 1280,
+        "wires": []
+    },
+    {
+        "id": "877ede096e783da2",
+        "type": "mqtt in",
+        "z": "ba26242dd546fca8",
+        "name": "",
+        "topic": "application/APPLICATION_ID/device/+/event/up",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "41a56e9da556b31d",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 320,
+        "y": 100,
+        "wires": [
+            [
+                "4571566654da4842"
+            ]
+        ]
+    },
+    {
+        "id": "4571566654da4842",
+        "type": "debug",
+        "z": "ba26242dd546fca8",
+        "name": "debug 43",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 500,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "30e5dd02194286bc",
+        "type": "wifiscan",
+        "z": "4c977c1dd5011fe1",
+        "name": "",
+        "x": 430,
+        "y": 180,
+        "wires": [
+            [
+                "3df4ed2943754b62"
+            ]
+        ]
+    },
+    {
+        "id": "3df4ed2943754b62",
+        "type": "debug",
+        "z": "4c977c1dd5011fe1",
+        "name": "debug 44",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 640,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "b3bf39f54d5ddb7e",
+        "type": "inject",
+        "z": "4c977c1dd5011fe1",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 160,
+        "y": 200,
+        "wires": [
+            [
+                "30e5dd02194286bc",
+                "4fc371b1d7aca263"
+            ]
+        ]
+    },
+    {
+        "id": "a4eeb06a89699989",
+        "type": "debug",
+        "z": "4c977c1dd5011fe1",
+        "name": "debug 45",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 700,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "4fc371b1d7aca263",
+        "type": "arp",
+        "z": "4c977c1dd5011fe1",
+        "name": "ARP",
+        "macs": "AE:B9:6B:55:C5:9B",
+        "x": 430,
+        "y": 260,
+        "wires": [
+            [
+                "a4eeb06a89699989"
+            ]
+        ]
+    },
+    {
+        "id": "d46073c90c3a1b2a",
+        "type": "function",
+        "z": "ed191f776baaaf49",
+        "g": "061c70e624668413",
+        "name": "Slice ProbeID",
+        "func": "const payload = msg.payload;\n\nconst deviceID = payload.devEUI;\nconst deviceName = payload.deviceName;\nconst data = payload.data;\nconst fPort = payload.fPort;\n\nif (deviceID === \"70b3d57ed005dbd0\") {\n    const probeID = data.slice(4, 10);\n    msg.probeID = probeID;\n}\nelse {\n    return null;\n}\n\nmsg.payload = {\n    deviceID: msg.payload.devEUI,\n    deviceName: deviceName,\n    data: payload.data,\n    fPort: fPort,\n    probeID: msg.probeID\n};\n\n// storing data \nglobal.set('latestData',msg.payload);\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 140,
+        "wires": [
+            [
+                "c42c84ae158718ea"
+            ]
+        ]
+    },
+    {
+        "id": "c42c84ae158718ea",
+        "type": "function",
+        "z": "ed191f776baaaf49",
+        "g": "061c70e624668413",
+        "name": "Assign ProbeID to Device_type",
+        "func": "const payload = msg.payload;\nconst probeID = msg.probeID;\n\nlet deviceType;\n\nswitch (probeID) {\n    case '000901':  //\"007E00090101C2003F\n        deviceType = 1;\n        break;\n    case '001703':\n        deviceType = 2;\n        break;\n    case '00160A':\n        deviceType = 3;\n        break;\n    default:\n        deviceType = null;\n}\n\nif (deviceType !== null) {\n    msg.deviceType = deviceType;\n    payload.deviceType = deviceType;\n}\n\nmsg.payload = {\n    deviceID: msg.payload.deviceID,\n    deviceName: payload.deviceName,\n    data: msg.payload.data,\n    fPort: payload.fPort,\n    probeID: probeID,\n    deviceType: deviceType\n};\n\nglobal.set('latestData', msg.payload); \n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 140,
+        "wires": [
+            [
+                "0966b7d4343aa3ba"
+            ]
+        ]
+    },
+    {
+        "id": "0966b7d4343aa3ba",
+        "type": "switch",
+        "z": "ed191f776baaaf49",
+        "g": "061c70e624668413",
+        "name": "Device Type",
+        "property": "payload.deviceType",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": 1,
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": 2,
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": 3,
+                "vt": "num"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 4,
+        "x": 830,
+        "y": 140,
+        "wires": [
+            [
+                "037cac71da8749a0"
+            ],
+            [
+                "037cac71da8749a0"
+            ],
+            [
+                "037cac71da8749a0"
+            ],
+            [
+                "037cac71da8749a0"
+            ]
+        ]
+    },
+    {
+        "id": "037cac71da8749a0",
+        "type": "function",
+        "z": "ed191f776baaaf49",
+        "g": "061c70e624668413",
+        "name": "Device 1",
+        "func": "let payload = msg.payload;\nlet deviceType = payload.deviceType;\n\nlet decoder3 = global.get('decoder3');\n\nlet decodedData;\n\nif (deviceType === 3) {\n    decodedData = decoder3(payload.data, deviceType);\n} else {\n    decodedData = {};\n}\n\npayload.decodedData = decodedData;\n\nmsg.payload = {\n    deviceID: msg.payload.deviceID,\n    deviceName: msg.payload.deviceName,\n    deviceType: msg.payload.deviceType,\n    fPort: msg.payload.fPort,\n    barometer: msg.payload.decodedData.barometer,\n    humidity: msg.payload.decodedData.humidity,\n    soilpH: msg.payload.decodedData.soil_pH,\n    soilEC: msg.payload.decodedData.soilEC,\n    soilTemperature: msg.payload.decodedData.soilTemperature,\n    soilMoisture: msg.payload.decodedData.soilMoisture,\n    airTemperature: msg.payload.decodedData.temperature\n};\n\n// storing data for the global context \nglobal.set('latestData', msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 700,
+        "y": 180,
+        "wires": [
+            [
+                "90f10c094a01536d"
+            ]
+        ]
+    },
+    {
+        "id": "db7f941b3e67e1ec",
+        "type": "inject",
+        "z": "ed191f776baaaf49",
+        "g": "061c70e624668413",
+        "name": "",
+        "props": [
+            {
+                "p": "payload.data",
+                "v": "007E00160A016700E6026836036700E604732670C20039",
+                "vt": "str"
+            },
+            {
+                "p": "payload.devEUI",
+                "v": "70b3d57ed005dbd0",
+                "vt": "str"
+            },
+            {
+                "p": "payload.fPort",
+                "v": "2",
+                "vt": "num"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 150,
+        "y": 140,
+        "wires": [
+            [
+                "d46073c90c3a1b2a"
+            ]
+        ]
+    },
+    {
+        "id": "90f10c094a01536d",
+        "type": "debug",
+        "z": "ed191f776baaaf49",
+        "g": "061c70e624668413",
+        "name": "debug 39",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 520,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "1603ef5d6ec06cb4",
+        "type": "inject",
+        "z": "ed191f776baaaf49",
+        "g": "061c70e624668413",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 170,
+        "y": 180,
+        "wires": [
+            [
+                "552678d8c9583302"
+            ]
+        ]
+    },
+    {
+        "id": "552678d8c9583302",
+        "type": "function",
+        "z": "ed191f776baaaf49",
+        "g": "061c70e624668413",
+        "name": "Decoder 2",
+        "func": "const data = msg.payload.data;\n\nfunction decoder3(data) {\n    console.log(data);\n    const bytes = Buffer.from(data, 'hex');\n    const decoded = {};\n    let i = 0;\n\n    while (i < bytes.length) {\n        const channel_id = bytes[i++];\n\n        if (channel_id === 0x70) {\n            decoded.soilMoisture = bytes[i];\n            i += 1;\n        } else if (channel_id === 0x67) {\n            decoded.soilTemperature = bytes[i];\n            i += 1;\n        } else if (channel_id === 0xC0) {\n            decoded.soilEC = bytes[i];\n            i += 1;\n        } else if (channel_id === 0xC2) {\n            decoded.soilPH = bytes[i];\n            i += 1;\n        } else {\n            break;\n        }\n    }\n\n    return decoded;\n}\n\nglobal.set('decoder3', decoder3);\n\nmsg.payload = global.get('decoder3')(msg.payload.data);\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 180,
+        "wires": [
+            []
+        ],
+        "icon": "node-red-contrib-lora-data-decrypt/lora.png"
+    },
+    {
+        "id": "13e8f96b4e43e8cc",
+        "type": "inject",
+        "z": "5925d8d1aa23e59b",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "23",
+        "payloadType": "str",
+        "x": 190,
+        "y": 140,
+        "wires": [
+            [
+                "e2906cc8b554207b"
+            ]
+        ]
+    },
+    {
+        "id": "f18447584be092be",
+        "type": "debug",
+        "z": "5925d8d1aa23e59b",
+        "name": "debug 46",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 620,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "e2906cc8b554207b",
+        "type": "function",
+        "z": "5925d8d1aa23e59b",
+        "name": "function 12",
+        "func": "const payloadValue = msg.payload;\nif (payloadValue >= 10) {\n    msg.payload = \"Object Detected\";\n}\nelse {\n    msg.payload = \"No Object Detected\"\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 140,
+        "wires": [
+            [
+                "f18447584be092be"
+            ]
+        ]
+    },
+    {
+        "id": "712d8352db985429",
+        "type": "inject",
+        "z": "5925d8d1aa23e59b",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "9",
+        "payloadType": "str",
+        "x": 190,
+        "y": 200,
+        "wires": [
+            [
+                "e2906cc8b554207b"
+            ]
+        ]
+    },
+    {
+        "id": "6a8fbb255def2fbb",
+        "type": "mqtt in",
+        "z": "39079b05cea09165",
+        "name": "",
+        "topic": "/rpi",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "ffcc300181243603",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 310,
+        "y": 100,
+        "wires": [
+            [
+                "9401b619462e3b0b"
+            ]
+        ]
+    },
+    {
+        "id": "9401b619462e3b0b",
+        "type": "debug",
+        "z": "39079b05cea09165",
+        "name": "debug 41",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 580,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "e9704765bc534807",
+        "type": "exec",
+        "z": "9f115ec5c19b92d2",
+        "command": "sudo nmap -sn 192.168.50.251/24",
+        "addpay": "payload",
+        "append": "",
+        "useSpawn": "true",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 860,
+        "y": 120,
+        "wires": [
+            [
+                "5567b943d7029f30"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "1405a8c4cfc5cc75",
+        "type": "inject",
+        "z": "9f115ec5c19b92d2",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "10",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 590,
+        "y": 120,
+        "wires": [
+            [
+                "e9704765bc534807"
+            ]
+        ]
+    },
+    {
+        "id": "5567b943d7029f30",
+        "type": "debug",
+        "z": "9f115ec5c19b92d2",
+        "name": "debug 47",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1120,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "41da2e7d.0131c8",
+        "type": "function",
+        "z": "6f0e8262.f095f",
+        "name": "Parse IP Address",
+        "func": "var ifconfig_output = msg.payload;\n\nif (typeof ifconfig_output === 'object') {\n    var ip_match = ifconfig_output.match(/inet (\\d+\\.\\d+\\.\\d+\\.\\d+)/);\n\n    if (ip_match) {\n        msg.ip_address = ip_match[1];\n    } else {\n        node.error(\"Error: Unable to determine IP address\");\n    }\n} else {\n    node.error(\"Error: ifconfig_output is not a string\");\n}\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 610,
+        "y": 160,
+        "wires": [
+            [
+                "cb7e3cc1.3e7b5"
+            ]
+        ]
+    },
+    {
+        "id": "cb7e3cc1.3e7b5",
+        "type": "exec",
+        "z": "6f0e8262.f095f",
+        "command": "sudo nmap -sn",
+        "addpay": "payload",
+        "append": "/24",
+        "useSpawn": "true",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 380,
+        "y": 280,
+        "wires": [
+            [
+                "2d2703b6.a00fc6"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "2d2703b6.a00fc6",
+        "type": "function",
+        "z": "6f0e8262.f095f",
+        "name": "Parse Nmap Output",
+        "func": "var devices = [];\nvar timestamp = Math.floor(Date.now() / 1000);\nvar ip_address = null;\n\nvar lines = msg.payload.split('\\n');\nfor (var i = 0; i < lines.length; i++) {\n    var line = lines[i];\n    if (line.match(/^Nmap scan report for/)) {\n        var words = line.split(' ');\n        ip_address = words[4].replace(/[\\(\\)]/g, '');\n    } else if (line.match(/^MAC Address: (.+)/)) {\n        var mac_address_match = line.match(/MAC Address: (.+)/);\n        var mac_address = mac_address_match ? mac_address_match[1] : null;\n        var additional_details = mac_address ? mac_address.match(/\\(([^)]+)\\)/) : null;\n        var details = additional_details ? additional_details[1] : null;\n        devices.push({\n            'ipAddress': ip_address,\n            'macAddress': mac_address.split('(')[0].trim(),\n            'timestamp': timestamp,\n            'manufacturer': details\n        });\n    }\n}\n\nmsg.payload = {\n    'deviceId': global.get('machine_id'),\n    'data': devices\n};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 540,
+        "y": 360,
+        "wires": [
+            [
+                "c10d9d2f.110ee"
+            ]
+        ]
+    },
+    {
+        "id": "c10d9d2f.110ee",
+        "type": "mqtt out",
+        "z": "6f0e8262.f095f",
+        "name": "",
+        "topic": "/rpi",
+        "qos": "0",
+        "retain": "",
+        "broker": "5d1c2b0e.6b3f3c",
+        "x": 740,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "446f94a9.6350a4",
+        "type": "inject",
+        "z": "6f0e8262.f095f",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 340,
+        "y": 180,
+        "wires": [
+            [
+                "41da2e7d.0131c8"
+            ]
+        ]
+    },
+    {
+        "id": "127eb939f5076121",
+        "type": "debug",
+        "z": "6f0e8262.f095f",
+        "name": "debug 48",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 680,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "7cb1510223c7f21b",
+        "type": "inject",
+        "z": "6f0e8262.f095f",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 100,
+        "wires": [
+            [
+                "9c5c0b1e.0b8a98"
+            ]
+        ]
+    },
+    {
+        "id": "9c5c0b1e.0b8a98",
+        "type": "exec",
+        "z": "6f0e8262.f095f",
+        "command": "ifconfig",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "true",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 340,
+        "y": 100,
+        "wires": [
+            [
+                "41da2e7d.0131c8",
+                "127eb939f5076121"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "d5c062fd7407b374",
+        "type": "function",
+        "z": "930610b97ccf9122",
+        "name": "Choose Interface and Run Nmap",
+        "func": "// let interfaces = msg.payload.interfaces;\n\n// let selectedInterface = null;\n\n// // Loop through available interfaces\n// for (const interfaceName in interfaces) {\n//     const interfaceInfo = interfaces[interfaceName];\n\n//     // Check if the interface has a valid inet property\n//     if (interfaceInfo && interfaceInfo.inet) {\n//         // If a valid interface is found, set selectedInterface and break out of the loop\n//         selectedInterface = interfaceInfo.inet;\n//         break;\n//     }\n// }\n\n// if (selectedInterface) {\n//     // Set the inet address to msg.inetAddress\n//     msg.inetAddress = selectedInterface.inetMatch[1];\n//     return msg;\n// } else {\n//     // If no valid interface is found, log an error and return null\n//     node.error('Error: No network interface with an IP address found.');\n//     return null;\n// }\nlet interfaces = msg.payload.interfaces;\n\n// Set the desired interface name\nconst desiredInterfaceName = \"wlp0s20f3\";\n\nlet selectedInterface = interfaces[desiredInterfaceName];\n\nif (selectedInterface && selectedInterface.inet) {\n    // Set the inet address to msg.inetAddress\n    msg.inetAddress = selectedInterface.inet;\n    return msg;\n} else {\n    // If the desired interface is not found or doesn't have a valid IP, log an error and return null\n    node.error(`Error: No valid IP address found for network interface ${desiredInterfaceName}.`);\n    return null;\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 440,
+        "y": 200,
+        "wires": [
+            [
+                "90e6c9617c17f4e6",
+                "8b89d1ed80ad60e4"
+            ]
+        ]
+    },
+    {
+        "id": "27356e49e4a5b8b2",
+        "type": "function",
+        "z": "930610b97ccf9122",
+        "name": "Parse Nmap Output",
+        "func": "let devices = [];\nlet timestamp = Math.floor(Date.now() / 1000);\nlet ip_address = null;\n\nlet lines = msg.payload.split('\\n');\nfor (let i = 0; i < lines.length; i++) {\n    let line = lines[i];\n    if (line.match(/^Nmap scan report for/)) {\n        let words = line.split(' ');\n        ip_address = words[4].replace(/[\\(\\)]/g, '');\n    } else if (line.match(/^MAC Address: (.+)/)) {\n        let mac_address_match = line.match(/MAC Address: (.+)/);\n        let mac_address = mac_address_match ? mac_address_match[1] : null;\n        let additional_details = mac_address ? mac_address.match(/\\(([^)]+)\\)/) : null;\n        let details = additional_details ? additional_details[1] : null;\n        devices.push({\n            'ipAddress': ip_address,\n            'macAddress': mac_address.split('(')[0].trim(),\n            'timestamp': timestamp,\n            'manufacturer': details\n        });\n    }\n}\n\nif (devices.length > 0) {\n    msg.payload = {\n        'deviceId': global.get('machine_id'),\n        'data': devices\n    };\n    return msg;\n} else {\n    node.error('Error: No devices found.');\n    return null;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1120,
+        "y": 180,
+        "wires": [
+            [
+                "0cc8e7f8500382a4"
+            ]
+        ]
+    },
+    {
+        "id": "0cc8e7f8500382a4",
+        "type": "mqtt out",
+        "z": "930610b97ccf9122",
+        "name": "",
+        "topic": "/rpi",
+        "qos": "0",
+        "retain": "",
+        "broker": "5d1c2b0e.6b3f3c",
+        "x": 1030,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "90e6c9617c17f4e6",
+        "type": "debug",
+        "z": "930610b97ccf9122",
+        "name": "debug 49",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 540,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "475f5c0238c0c12d",
+        "type": "debug",
+        "z": "930610b97ccf9122",
+        "name": "debug 59",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 200,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "80cddc515acaeaa0",
+        "type": "inject",
+        "z": "930610b97ccf9122",
+        "name": "",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 80,
+        "y": 100,
+        "wires": [
+            [
+                "88a816ef79ddf4f6"
+            ]
+        ]
+    },
+    {
+        "id": "88a816ef79ddf4f6",
+        "type": "exec",
+        "z": "930610b97ccf9122",
+        "command": "ifconfig",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "Get Interface IP",
+        "x": 280,
+        "y": 100,
+        "wires": [
+            [
+                "bcb80196562ea49e"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "bcb80196562ea49e",
+        "type": "function",
+        "z": "930610b97ccf9122",
+        "name": "Extract Interface IP",
+        "func": "const ifconfigOutput = msg.payload;\nconst lines = ifconfigOutput.split('\\n');\nconst interfaces = {};\nconst interfaceRegex = /^([a-zA-Z0-9]+(?:[.:][a-zA-Z0-9]+)?)\\s*:/;\nlet currentInterface = null;\n\nfor (let i = 0; i < lines.length; i++) {\n    const line = lines[i];\n    const interfaceMatch = line.match(interfaceRegex);\n\n    if (interfaceMatch) {\n        currentInterface = interfaceMatch[1];\n        interfaces[currentInterface] = { inet: '' };\n\n        // Check for 'inet' directly after identifying the interface\n        const inetMatch = line.match(/\\sinet\\s+([0-9.]+)/);\n        if (inetMatch) {\n            interfaces[currentInterface].inet = inetMatch[1];\n        }\n    } else if (currentInterface) {\n        const parts = line.split(/\\s+/);\n        const key = parts[0].replace(':', '');\n        const value = parts.slice(1).join(' ').trim();\n\n        interfaces[currentInterface][key] = value;\n\n        // Check for 'inet' if the key is not 'inet' and the line contains 'inet'\n        if (key !== 'inet' && line.includes('inet')) {\n            const inetMatch = line.match(/\\sinet\\s+([0-9.]+)/);\n            if (inetMatch) {\n                interfaces[currentInterface].inet = inetMatch[1];\n            }\n        }\n    }\n}\n\nmsg.payload = interfaces;\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 150,
+        "y": 200,
+        "wires": [
+            [
+                "d5c062fd7407b374",
+                "475f5c0238c0c12d",
+                "38a48e01884ae185"
+            ]
+        ]
+    },
+    {
+        "id": "879ac78230b49f8d",
+        "type": "inject",
+        "z": "930610b97ccf9122",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 180,
+        "y": 480,
+        "wires": [
+            [
+                "d97163a60c58b917"
+            ]
+        ]
+    },
+    {
+        "id": "a5c412097c8b3b81",
+        "type": "debug",
+        "z": "930610b97ccf9122",
+        "name": "debug 60",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 660,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "d97163a60c58b917",
+        "type": "exec",
+        "z": "930610b97ccf9122",
+        "command": "cat /etc/machine-id",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 430,
+        "y": 480,
+        "wires": [
+            [
+                "a5c412097c8b3b81"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "8b89d1ed80ad60e4",
+        "type": "exec",
+        "z": "930610b97ccf9122",
+        "command": "sudo nmap -sn",
+        "addpay": "payload",
+        "append": "/24",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 760,
+        "y": 200,
+        "wires": [
+            [
+                "27356e49e4a5b8b2"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "38a48e01884ae185",
+        "type": "function",
+        "z": "930610b97ccf9122",
+        "name": "Filter Interface by Name and Inet",
+        "func": "const interfaceName = msg.interfaceName || 'wlp0s20f3'; // Use the provided interfaceName or default to 'wlp0s20f3'\nconst targetInet = msg.targetInet; // Use the provided targetInet or default to '192.168.1.1'\nconst interfaces = msg.payload;\nconst filteredInterface = interfaces[interfaceName];\n\n// Check if the interface exists and has the specified 'inet' address\nif (filteredInterface && filteredInterface.inet === targetInet) {\n    msg.payload = filteredInterface;\n    return msg;\n} else {\n    // Interface not found or 'inet' address doesn't match\n    return null;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 140,
+        "wires": [
+            [
+                "8b89d1ed80ad60e4"
+            ]
+        ]
+    },
+    {
+        "id": "84d1679e25bafadc",
+        "type": "debug",
+        "z": "930610b97ccf9122",
+        "name": "debug 63",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1160,
+        "y": 1220,
+        "wires": []
+    },
+    {
+        "id": "ed736bed30750c94",
+        "type": "inject",
+        "z": "930610b97ccf9122",
+        "name": "",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 1160,
+        "wires": [
+            [
+                "f2b89e98807a3b95"
+            ]
+        ]
+    },
+    {
+        "id": "f2b89e98807a3b95",
+        "type": "exec",
+        "z": "930610b97ccf9122",
+        "command": "ifconfig",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "Get Interface IP",
+        "x": 340,
+        "y": 1160,
+        "wires": [
+            [
+                "358f7bcf0bfd8748"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "358f7bcf0bfd8748",
+        "type": "function",
+        "z": "930610b97ccf9122",
+        "name": "Extract Interface IP",
+        "func": "const ifconfigOutput = msg.payload;\nconst lines = ifconfigOutput.split('\\n');\nconst interfaces = {};\nconst interfaceRegex = /^([a-zA-Z0-9]+(?:[.:][a-zA-Z0-9]+)?)\\s*:/;\nlet currentInterface = null;\n\nfor (let i = 0; i < lines.length; i++) {\n    const line = lines[i];\n    const interfaceMatch = line.match(interfaceRegex);\n\n    if (interfaceMatch) {\n        currentInterface = interfaceMatch[1];\n        interfaces[currentInterface] = { inet: '' };\n\n        // Check for 'inet' directly after identifying the interface\n        const inetMatch = line.match(/\\sinet\\s+([0-9.]+)/);\n        if (inetMatch) {\n            interfaces[currentInterface].inet = inetMatch[1];\n            console.log(`Found inet for ${currentInterface}: ${inetMatch[1]}`);\n        }\n    } else if (currentInterface) {\n        const parts = line.split(/\\s+/);\n        const key = parts[0].replace(':', '');\n        const value = parts.slice(1).join(' ').trim();\n\n        interfaces[currentInterface][key] = value;\n\n        // Check for 'inet' if the key is not 'inet' and the line contains 'inet'\n        if (key !== 'inet' && line.includes('inet')) {\n            const inetMatch = line.match(/\\sinet\\s+([0-9.]+)/);\n            if (inetMatch) {\n                interfaces[currentInterface].inet = inetMatch[1];\n                console.log(`Found inet for ${currentInterface}: ${inetMatch[1]}`);\n            }\n        }\n    }\n}\n\nconsole.log(\"Final interfaces object:\", interfaces);\n\nmsg.payload = interfaces;\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 210,
+        "y": 1260,
+        "wires": [
+            [
+                "123d7f811e8ef164"
+            ]
+        ]
+    },
+    {
+        "id": "123d7f811e8ef164",
+        "type": "function",
+        "z": "930610b97ccf9122",
+        "name": "Choose Interface and Run Nmap",
+        "func": "if (msg.payload) {\n    let interfaces = msg.payload;\n\n    // Set the desired interface name\n    const desiredInterfaceName = \"wlp0s20f3\";\n\n    // Log the interfaces object for debugging\n    console.log(\"Interfaces object:\", interfaces);\n\n    let selectedInterface = interfaces[desiredInterfaceName];\n\n    if (selectedInterface && selectedInterface.inet) {\n        // Create a new object with only the selected interface and its 'inet' property\n        msg.payload = {\n            interface: desiredInterfaceName,\n            inet: selectedInterface.inet\n        };\n        console.log(`Selected Interface and Inet: ${JSON.stringify(msg.payload)}`);\n        return msg;\n    } else {\n        // If the desired interface is not found or doesn't have a valid IP, log an error and return null\n        node.error(`Error: No valid IP address found for network interface ${desiredInterfaceName}.`);\n        return null;\n    }\n} else {\n    // Log an error if msg.payload is not defined\n    node.error(\"Error: Missing payload property in msg.\");\n    return null;\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 1360,
+        "wires": [
+            [
+                "5d728359e1291dd2"
+            ]
+        ]
+    },
+    {
+        "id": "5d728359e1291dd2",
+        "type": "exec",
+        "z": "930610b97ccf9122",
+        "command": "nmap -sn",
+        "addpay": "payload.inet",
+        "append": "/24",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 850,
+        "y": 1360,
+        "wires": [
+            [
+                "84d1679e25bafadc"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "cf3bd49afb367131",
+        "type": "function",
+        "z": "fd061ce0802c10da",
+        "name": "function 9",
+        "func": "\nlet topic1 = \"INSERT INTO TelemetryData (deviceId, ipAddress, macAddress, timestamp, manufacturer)\";\nlet topic2 = \"VALUES\" + \"(\"+msg.payload.ipAddress+\", \"+msg.payload.macAddress+\", \"+msg.payload.timestamp+\", \"+msg.payload.manufacturer+\")\";\nmsg.topic = topic1 + topic2;\nconsole.log(msg.payload.ipAddress)\nconsole.log(topic2);\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 660,
+        "y": 280,
+        "wires": [
+            [
+                "f5a33b9abd56af50"
+            ]
+        ]
+    },
+    {
+        "id": "259b482a6afd9d26",
+        "type": "debug",
+        "z": "fd061ce0802c10da",
+        "name": "debug 97",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 940,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "d88603ac6ae66e9c",
+        "type": "inject",
+        "z": "fd061ce0802c10da",
+        "g": "86694ccb67cfbdfe",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "30",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 120,
+        "y": 100,
+        "wires": [
+            [
+                "c5e38170e19a9e4d",
+                "58d242be76eb5b22"
+            ]
+        ]
+    },
+    {
+        "id": "58d242be76eb5b22",
+        "type": "exec",
+        "z": "fd061ce0802c10da",
+        "g": "86694ccb67cfbdfe",
+        "command": "sudo arp-scan --localnet",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "true",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 340,
+        "y": 80,
+        "wires": [
+            [
+                "3649a464d9bdc35a"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "e55a2e4bba4b2c33",
+        "type": "debug",
+        "z": "fd061ce0802c10da",
+        "g": "86694ccb67cfbdfe",
+        "name": "debug 78",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 750,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "e74b05af21713cea",
+        "type": "function",
+        "z": "fd061ce0802c10da",
+        "g": "86694ccb67cfbdfe",
+        "name": "function 3",
+        "func": "global.set('machine_id',msg.payload);\n//const machineID = msg.payload.machine_id;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 430,
+        "y": 140,
+        "wires": [
+            [
+                "3649a464d9bdc35a"
+            ]
+        ]
+    },
+    {
+        "id": "c5e38170e19a9e4d",
+        "type": "exec",
+        "z": "fd061ce0802c10da",
+        "g": "86694ccb67cfbdfe",
+        "command": "cat /etc/machine-id",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "Machine_ID",
+        "x": 280,
+        "y": 140,
+        "wires": [
+            [
+                "e74b05af21713cea"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "3649a464d9bdc35a",
+        "type": "function",
+        "z": "fd061ce0802c10da",
+        "g": "86694ccb67cfbdfe",
+        "name": "Parse ARP-scan Output",
+        "func": "let devices = [];\nlet timestamp = Math.floor(Date.now() / 1000);\nlet lines = msg.payload.split('\\n');\n\n// Regular expression to match a valid IPv4 address\nconst ipv4Regex = /^(\\d{1,3}\\.){3}\\d{1,3}$/;\n\nfor (let i = 0; i < lines.length; i++) {\n    let line = lines[i];\n\n    // Check if the line contains valid IP, MAC, and manufacturer information\n    let match = line.match(/^(\\S+)\\s+(\\S+)\\s+(.+)/);\n\n    if (match && match.length === 4 && ipv4Regex.test(match[1])) {\n        let ip_address = match[1];\n        let mac_address = match[2].toUpperCase(); // Convert MAC address to uppercase\n        let manufacturer = match[3];\n\n        devices.push({\n            'ipAddress': ip_address,\n            'macAddress': mac_address,\n            'timestamp': timestamp,\n            'manufacturer': manufacturer\n        });\n    }\n}\n\nif (devices.length > 0) {\n    msg.payload = {\n        //'deviceId': global.get('machine_id'),\n        'data': devices\n    };\n    console.log(\"Payload:\", msg.payload);\n    return msg;\n} else {\n    //node.error('Error: No devices found.');\n   //return null;\n}\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 80,
+        "wires": [
+            [
+                "e55a2e4bba4b2c33",
+                "cf3bd49afb367131"
+            ]
+        ]
+    },
+    {
+        "id": "f5a33b9abd56af50",
+        "type": "sqlite",
+        "z": "fd061ce0802c10da",
+        "mydb": "f702e1ecb14c730e",
+        "sqlquery": "msg.topic",
+        "sql": "Select * from TelemetryData;",
+        "name": "DB Local",
+        "x": 800,
+        "y": 280,
+        "wires": [
+            [
+                "259b482a6afd9d26"
+            ]
+        ]
+    },
+    {
+        "id": "ec07bc382be65bcf",
+        "type": "inject",
+        "z": "fd061ce0802c10da",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 340,
+        "y": 420,
+        "wires": [
+            [
+                "08921c211ead7efd"
+            ]
+        ]
+    },
+    {
+        "id": "08921c211ead7efd",
+        "type": "sqlite",
+        "z": "fd061ce0802c10da",
+        "mydb": "f702e1ecb14c730e",
+        "sqlquery": "fixed",
+        "sql": "Select * from TelemetryData;",
+        "name": "DB Local",
+        "x": 560,
+        "y": 420,
+        "wires": [
+            [
+                "313a54185f780aa6"
+            ]
+        ]
+    },
+    {
+        "id": "313a54185f780aa6",
+        "type": "debug",
+        "z": "fd061ce0802c10da",
+        "name": "debug 98",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 760,
+        "y": 420,
+        "wires": []
+    }
+]
